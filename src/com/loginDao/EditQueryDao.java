@@ -34,10 +34,10 @@ public class EditQueryDao {
 	}
 	
 	public static List<PojoGetQueryObject> returnArchiveData() {
-		String url="jdbc:postgresql://localhost:5432/ContactUs";
+		String url="jdbc:postgresql://localhost:5432/LoginPage";
         String user="postgres";
         String pass="Manish10@";
-        String query="select * from archive2";
+        String query="select * from archive";
         List<PojoGetQueryObject>objectList=new ArrayList<>();
         try {
 			    Class.forName("org.postgresql.Driver");
@@ -81,8 +81,9 @@ public class EditQueryDao {
 				} 
 			}
 		}
-		String postgreSql = "insert into archive2 (id,full_name,email,message) values(?,?,?,?);";
+		String postgreSql = "insert into archive (id,full_name,email,message) values(?,?,?,?);";
         try {
+        		url="jdbc:postgresql://localhost:5432/LoginPage";
 			    Class.forName("org.postgresql.Driver");
 			    Connection con = DriverManager.getConnection(url,user,pass);
 			    PreparedStatement statement = con.prepareStatement(postgreSql);
