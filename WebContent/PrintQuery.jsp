@@ -7,7 +7,7 @@
 <%@ page import="java.sql.ResultSet" %>
 <%@ page import="java.sql.Statement" %>
 <%@ page import="com.loginDao.EditQueryDao" %>
-<%@ page import="com.loginDao.PojoGetQueryObject" %>
+<%@ page import="com.loginPOJO.PojoGetQueryObject" %>
 <%@ page import="java.util.List" %>
 
 <!DOCTYPE html>

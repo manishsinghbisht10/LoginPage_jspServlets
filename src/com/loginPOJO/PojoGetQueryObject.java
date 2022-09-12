@@ -1,4 +1,4 @@
-package com.loginDao;
+package com.loginPOJO;
 
 public class PojoGetQueryObject {
 

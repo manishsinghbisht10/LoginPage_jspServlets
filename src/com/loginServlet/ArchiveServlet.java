@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.loginDao.EditQueryDao;
 
 @WebServlet("/setArchiveData")
-public class setArchiveData extends HttpServlet {
+public class ArchiveServlet extends HttpServlet {
 	
 public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 	System.out.print(req.getParameter("name"));

@@ -11,7 +11,7 @@ import javax.servlet.http.HttpSession;
 import com.loginDao.AdministratorCheckDao;
 
 @WebServlet("/loginServlet")
-public class loginServlet extends HttpServlet 
+public class LoginServlet extends HttpServlet 
 {
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String email=request.getParameter("email");

@@ -10,6 +10,8 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.loginPOJO.PojoGetQueryObject;
+
 public class EditQueryDao {
 
 	public static List<PojoGetQueryObject> returnUserData() {
